@@ -2283,5 +2283,69 @@
 // let resOfSortThePeople = sortThePeoples(names,heights);
 // console.log(resOfSortThePeople);
 
+// todo Day 16th (16/04/2025):-
 
+// ? Q66. Swap two variables without third variable:-
+// ? Hint -> We are using zor operator.
+// function swapTwoVariables(a, b) {
+//   a = a ^ b;
+//   b = a ^ b;
+//   a = a ^ b;
+//   return [a, b];
+// }
+// let resOfSwaping = swapTwoVariables(5, 10);
+// console.log(resOfSwaping);
 
+// ? Q67. Check if a number is even or odd by (end operator):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number: "));
+
+// function checkEvenOdd(n) {
+//   let res = (n & 1) === 0 ? "Even Number" : "Odd Number";
+//   return res;
+// }
+// let resEvenOdd = checkEvenOdd(n);
+// console.log(resEvenOdd);
+
+// ? Q68. Check if a number is power of 2 or not(use end operator):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter the number: "));
+
+// function checkTwosPower(n){
+// let res = n > 0 && (n & (n-1)) === 0 ? "Yes,It is power of two":"No,It is not a power of two";
+// return res;
+// }
+// let resTwoPower = checkTwosPower(n);
+// console.log(resTwoPower);
+
+// todo Day 17th (17/04/2025):-
+
+// ? Recursion Deff. -> A function calling again and again until unless it not found the base condition.
+
+// ? Q69. Print n time hello world:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number: "));
+
+// temp(n);
+// function temp(a) {
+//   if (a === 0) return;
+//   console.log("Hello World");
+//   temp(a - 1);
+// }
+
+// ! Note => In place of (n-1) we can use --n it work same because pre decrement do decrement first but post n-- use the value then decrement it so post can't be used.
+
+// ? Q70. print n values from n to 1:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number: "));
+
+// temp(n);
+// function temp(a) {
+//   if (a === 0) return;
+//   process.stdout.write(a + " "); 
+//   temp(--a);
+// }
