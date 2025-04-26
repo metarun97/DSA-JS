@@ -2433,4 +2433,59 @@
 // let res = febonacciSum(n);
 // console.log(res);
 
+// todo Day 19th (25/04/2025):-
 
+// ? Q76. Sum of digits (By using recursion):-
+
+// let n = 891;
+// function sumOfDigits(n) {
+//   if (n < 10) return n;
+//   return (n % 10) + sumOfDigits(Math.floor(n / 10));
+// }
+// let resOfSum = sumOfDigits(n);
+// console.log(resOfSum);
+
+// ? Q77. Reverse digits (By using recursion):-
+
+// let n = 891;
+
+// function reverseDigit(n, rev) {
+//   if (n === 0) return rev;
+//   return reverseDigit(Math.floor(n / 10), rev * 10 + (n % 10));
+// }
+// let resOfRev = reverseDigit(n, 0);
+// console.log(resOfRev);
+
+// ? Q78. GCD/HCF of two numbers:-
+
+// let a = 32;
+// let b = 20;
+
+// for (let i = Math.min(a, b); i >= 1; i--) {
+//   if (a % i === 0 && b % i === 0) {
+//     console.log(i);
+//     break;
+//   }
+// }
+
+// ? Q78. GCD/HCF of two numbers (Euclidean Theorem):-
+
+// let a = 18,
+//   b = 28;
+// while (a !== b) {
+//   if (a > b) a = a - b;
+//   else b = b - a;
+// }
+// console.log(a);
+
+// ? Q79. GCD/HCF of two numbers by recursive (Euclidean Theorem):-
+
+// let a = 18;
+// let b = 28;
+
+// function gcdRecursive(a, b) {
+//   if (a === b) return a;
+//   if (a > b) return gcdRecursive(a - b, b);
+//   else return gcdRecursive(a, b - a);
+// }
+// console.log(gcdRecursive(a, b));
