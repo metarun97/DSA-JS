@@ -2329,23 +2329,108 @@
 // let prompt = require("prompt-sync")();
 // let n = Number(prompt("Enter a number: "));
 
-// temp(n);
 // function temp(a) {
 //   if (a === 0) return;
 //   console.log("Hello World");
 //   temp(a - 1);
 // }
+// temp(n);
 
 // ! Note => In place of (n-1) we can use --n it work same because pre decrement do decrement first but post n-- use the value then decrement it so post can't be used.
 
-// ? Q70. print n values from n to 1:-
+// ? Q70. Print n values from n to 1:-
 
 // let prompt = require("prompt-sync")();
 // let n = Number(prompt("Enter a number: "));
 
-// temp(n);
 // function temp(a) {
 //   if (a === 0) return;
-//   process.stdout.write(a + " "); 
-//   temp(--a);
+//   process.stdout.write(a + " ");
+//   temp(a - 1);
 // }
+// temp(n);
+
+// todo Day 18th (24/04/2025):-
+
+// ? Q71. Print n values from 1 to n:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number: "));
+
+// function temp(n) {
+//   if (n === 0) return;
+//   temp(n - 1);
+//   process.stdout.write(n + " ");
+// }
+// temp(n);
+
+// ? Q72. Print sum of 1 to n values:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n value: "));
+
+// function sum(n) {
+//   if (n === 1) return n;
+//   return n + sum(n - 1);
+// }
+// let res = sum(n);
+// console.log(res);
+
+// ? Q72. Print factorial of 1 to n values:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n value: "));
+
+// function fact(n) {
+//   if (n === 1) return n;
+//   if (n === 0) return 1;
+//   return n * fact(n - 1);
+// }
+// let res = fact(n);
+// console.log(res);
+
+// ? Q73. Print fabonacci series uptp to n values (By using Loops):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n value: "));
+// let first = 0;
+// let second = 1;
+// process.stdout.write(first + " " + second + " ")
+
+// for (let i = 1; i < n - 2; i++) {
+//   let third = first + second;
+//   process.stdout.write(third + " ");
+//   first = second;
+//   second = third;
+// }
+
+// ? Q74. Print fabonacci series uptp to n values (By using recursion):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n value: "));
+// let first = 0;
+// let second = 1;
+// process.stdout.write(first + " " + second + " ");
+
+// function fabonaciSeries(n, first, second) {
+//   if (n === 0) return;
+//   let third = first + second;
+//   process.stdout.write(third + " ");
+//   fabonaciSeries(n - 1, second, third);
+// }
+// fabonaciSeries(n - 2, first, second);
+
+// ? Q75. Print fabonacci series sum upto to n values (By using recursion):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n value: "));
+
+// function febonacciSum(n) {
+//   if (n === 0) return 0;
+//   if (n === 1) return 1;
+//   return febonacciSum(n - 1) + febonacciSum(n - 2);
+// }
+// let res = febonacciSum(n);
+// console.log(res);
+
+
