@@ -2468,8 +2468,8 @@
 //   }
 // }
 
-// ? Q78. GCD/HCF of two numbers (Euclidean Theorem):-
-
+// ? Q78. GCD/HCF of two numbers:-
+// ? A:-
 // let a = 18,
 //   b = 28;
 // while (a !== b) {
@@ -2478,7 +2478,8 @@
 // }
 // console.log(a);
 
-// ? Q79. GCD/HCF of two numbers by recursive (Euclidean Theorem):-
+// ? Q78. GCD/HCF of two numbers by recursive (Euclidean Theorem):-
+// ? B:-
 
 // let a = 18;
 // let b = 28;
@@ -2489,3 +2490,58 @@
 //   else return gcdRecursive(a, b - a);
 // }
 // console.log(gcdRecursive(a, b));
+
+// ? Q79. GCD/HCF of two numbers by recursive (Euclidean Theorem):-
+// ? C:-
+
+// function gdcByUclidean(a, b) {
+//   if (b === 0) return a;
+//   return gdcByUclidean(b, a % b);
+// }
+// let resOfGcd = gdcByUclidean(16, 18);
+// console.log(resOfGcd)
+
+// ? Q80. Give prime numbers between 1 to n numbers (Sieve of erathosthenes):-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n number: "));
+
+// function checkPrimeRange(n) {
+//   let primeArr = new Array(n + 1).fill(true);
+//   for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
+//     if (primeArr[i] === true) {
+//       for (let j = i * i; j <= n; j += i) {
+//         primeArr[j] = false;
+//       }
+//     }
+//   }
+//   for (let i = 1; i <= primeArr.length; i++) {
+//     if (primeArr[i]) process.stdout.write(i + " ");
+//   }
+// }
+// checkPrimeRange(n);
+
+// ? Q81. Give qrt(x) Efficient:-
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter n number: "));
+// let i = 1;
+// function sqNumFind(n) {
+//   for (; i * i <= n; i++) {
+//     if (i * i === n) return i;
+//   }
+//   return i - 1;
+// }
+// let res = sqNumFind(n);
+// console.log(res);
+
+
+// ? Q81. Give qrt(x) Efficient:-
+
+// let prompt = require("prompt-sync")();
+// let x = 2;
+// let n = 10;
+
+// function powFind(x,n){
+
+// }
