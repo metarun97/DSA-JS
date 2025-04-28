@@ -2535,13 +2535,21 @@
 // let res = sqNumFind(n);
 // console.log(res);
 
-
 // ? Q81. Give qrt(x) Efficient:-
 
-// let prompt = require("prompt-sync")();
 // let x = 2;
 // let n = 10;
 
-// function powFind(x,n){
+// let pow = function (x, n) {
+//   if (n === 0) return 1;
+//   return n < 0 ? 1 / temp(x, n) : temp(x, n);
+// };
 
-// }
+// let temp = function (x, n) {
+//   if (n === 0) return 1;
+//   let ans = temp(x, parseInt(n / 2));
+//   if (n % 2 === 0) return ans * ans;
+//   return ans * ans * x;
+// };
+// let res = pow(x, n);
+// console.log(res);
