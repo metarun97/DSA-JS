@@ -2553,3 +2553,81 @@
 // };
 // let res = pow(x, n);
 // console.log(res);
+
+// todo Day 20th (28/04/2025):-
+
+// ? Q82. Merge Two sorted arrays into one Array:-
+
+// let arr1 = [2, 4, 5];
+// let arr2 = [1, 4, 7, 10, 15];
+
+// let ans = new Array(arr1.length + arr2.length);
+// let i = 0,
+//   j = 0,
+//   k = 0;
+
+// while (i < arr1.length && j < arr2.length) {  // ( i ,j andar hone chaiye arr1,arr2  ki length k)
+//   if (arr1[i] < arr2[j]) {
+//     ans[k++] = arr1[i++];
+//   } else {
+//     ans[k++] = arr2[j++];
+//   }
+// }
+
+// while (i < arr1.length) {   // ( i arr1 ki length k andar h matlab j exaust )
+//   ans[k++] = arr1[i++];
+// }
+// while (j < arr2.length) {   // ( j arr2 ki length k andar h matlab i exaust )
+//   ans[k++] = arr2[j++];
+// }
+// console.log(ans);
+
+// ? Q83. Merge Sorted Array:-
+
+// let nums1 = [5, 6, 0, 0];
+// let nums2 = [1, 2];
+// let m = 2,
+//   n = 2;
+
+// function mergeSortedArr(nums1, m, nums2, n) {
+//   let i = m - 1,
+//     j = n - 1,
+//     k = nums1.length - 1;
+//   while (i >= 0 && j >= 0) {
+//     if (nums1[i] > nums2[j]) nums1[k--] = nums1[i--];
+//     else nums1[k--] = nums2[j--];
+//   }
+//   while (j >= 0) {
+//     nums1[k--] = nums2[j--];
+//   }
+//   return nums1;
+// }
+// let res = mergeSortedArr(nums1, m, nums2, n);
+// console.log(res);
+
+// ? Q84. Remove duplicated from Array:-
+
+// ? (A) - Bruteforce way:-
+
+// let arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+
+// let arrRes = new Set(arr);
+// console.log(arrRes);
+
+// ? (B) - Optimised way:-        
+
+// let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+// let j = 1;
+
+// function removeDuplcates(nums) {
+//   for (i = 0; i < nums.length - 1; i++) {
+//     if (nums[i] !== nums[i + 1]) {
+//       nums[j] = nums[i + 1];
+//       j++;
+//     }
+//   }
+//   return j;
+// }
+// console.log(removeDuplcates(nums));
+
+// ? Q85. Move zeros from Array:-
