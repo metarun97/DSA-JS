@@ -2614,7 +2614,7 @@
 // let arrRes = new Set(arr);
 // console.log(arrRes);
 
-// ? (B) - Optimised way:-        
+// ? (B) - Optimised way:-
 
 // let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 // let j = 1;
@@ -2631,3 +2631,62 @@
 // console.log(removeDuplcates(nums));
 
 // ? Q85. Move zeros from Array:-
+// !Not done yet.
+
+// ? Q86. Maximum subarray (Kadane's Algorithm):-
+
+// let arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+
+// function subarrayFun(arr) {
+//   let sum = 0;
+//   let maxSum = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//     if (sum > maxSum) maxSum = sum;
+//     if (sum < 0) sum = 0;
+//   }
+//   return maxSum;
+// }
+// let res = subarrayFun(arr);
+// console.log(res);
+
+// ? Q87. Majority Element (Boyer-Moore Voting Algorithm):-
+
+// let arr = [2, 2, 1, 1, 1, 2, 2];
+// function majorityElemeFun(arr) {
+//   let ans = arr[0];
+//   let count = 1;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] === ans) {
+//       count++;
+//     } else {
+//       count--;
+//       if (count === 0) {
+//         ans = arr[i];
+//         count = 1;
+//       }
+//     }
+//   }
+//   return ans;
+// }
+// let res = majorityElemeFun(arr);
+// console.log(res);
+
+// ? Q88. Best Time to Buy and Sell Stock:-
+
+// let arr = [7, 1, 5, 3, 6, 4];
+
+// function bestTimeSaleStock(arr) {
+//   let min = arr[0];
+//   let maxProfit = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) min = arr[i];
+//     let currProfit = arr[i] - min;
+//     if (currProfit > maxProfit) {
+//       maxProfit = currProfit;
+//     }
+//   }
+//   return maxProfit;
+// }
+// let res = bestTimeSaleStock(arr);
+// console.log(res);
