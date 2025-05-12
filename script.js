@@ -2690,3 +2690,25 @@
 // }
 // let res = bestTimeSaleStock(arr);
 // console.log(res);
+
+// ? Q89. Sort the color:-
+
+let arr = [1, 1, 0, 1, 0, 2, 1, 0, 2, 0, 1, 2, 1];
+
+let i = 0,
+  j = 0,
+  k = arr.length - 1;
+let swap = (arr, i, j) => {
+  let temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+};
+
+function sortTheColor(arr) {
+  while (i <= k) {
+    if (arr[i] === 0) swap(arr, i++, j++);
+    else if (arr[i] === 2) swap(arr, i, k--);
+  }
+}
+let res = sortTheColor(arr);
+console.log(res);
