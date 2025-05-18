@@ -2693,22 +2693,56 @@
 
 // ? Q89. Sort the color:-
 
-let arr = [1, 1, 0, 1, 0, 2, 1, 0, 2, 0, 1, 2, 1];
+// let nums = [1, 1, 0, 1, 0, 2, 1, 0, 2, 0, 1, 2, 1];
 
-let i = 0,
-  j = 0,
-  k = arr.length - 1;
-let swap = (arr, i, j) => {
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-};
+// let swap = function (nums, i, j) {
+//   let temp = nums[i];
+//   nums[i] = nums[j];
+//   nums[j] = temp;
+// };
 
-function sortTheColor(arr) {
-  while (i <= k) {
-    if (arr[i] === 0) swap(arr, i++, j++);
-    else if (arr[i] === 2) swap(arr, i, k--);
-  }
-}
-let res = sortTheColor(arr);
-console.log(res);
+// let sortTheColor = function (nums) {
+//   let i = 0;
+//   let j = 0;
+//   let k = nums.length - 1;
+//   while (i <= k) {
+//     if (nums[i] === 0) swap(nums, i++, j++);
+//     else if (nums[i] === 2) swap(nums, i, k--);
+//     else i++;
+//   }
+//   return nums;
+// };
+// let sortedColors = sortTheColor(nums);
+// console.log(sortedColors);
+
+
+// ? Q90. (LC - 42) Trapping Rain Water:-
+
+// let nums = [4, 2, 0, 3, 2, 5];
+// let n = nums.length;0
+// let left = new Array(n);
+// let right = new Array(n);
+
+// let leftMax = nums[0];
+// left[0] = leftMax;
+// for (let i = 1; i < n; i++) {
+//     leftMax = Math.max(nums[i], leftMax);
+//     left[i] = leftMax;
+// }
+
+// let rightMax = nums[n - 1];
+// right[n - 1] = rightMax;
+// for (let i = n - 2; i >= 0; i--) {
+//     rightMax = Math.max(nums[i], rightMax);
+//     right[i] = rightMax;
+// }
+
+// let ans = 0;
+// for (let i = 0; i < n; i++) {
+//     ans += Math.min(left[i], right[i]) - nums[i];
+// }
+
+// console.log(ans);
+
+
+// ? Q91. (LC - 11) Trapping Rain Water:-
