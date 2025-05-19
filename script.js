@@ -2715,7 +2715,6 @@
 // let sortedColors = sortTheColor(nums);
 // console.log(sortedColors);
 
-
 // ? Q90. (LC - 42) Trapping Rain Water:-
 
 // let nums = [4, 2, 0, 3, 2, 5];
@@ -2744,5 +2743,20 @@
 
 // console.log(ans);
 
-
 // ? Q91. (LC - 11) Trapping Rain Water:-
+
+// let nums = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+
+// let ans = 0,
+//   i = 0,
+//   j = nums.length - 1;
+// function trappinRainWater(nums) {
+//   while (i < j) {
+//     ans = Math.max(ans, Math.min(nums[i], nums[j]) * (j - i));
+//     if (nums[i] < nums[j]) i++;
+//     else j--;
+//   }
+//   return ans;
+// }
+// let res = trappinRainWater(nums);
+// console.log(res);
