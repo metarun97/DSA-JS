@@ -2760,3 +2760,55 @@
 // }
 // let res = trappinRainWater(nums);
 // console.log(res);
+
+// ? Q92. (LC - 15) 3Sum:-
+
+// let arr = [-4, -1, -1, 0, 1, 2];
+// function threeSum(arr) {
+//   arr.sort((a, b) => a - b);
+//   let ans = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i !== 0 && arr[i] === arr[i - 1]) continue;
+//     let j = i + 1,
+//       k = arr.length - 1;
+//     while (j < k) {
+//       let sum = arr[i] + arr[j] + arr[k];
+//       {
+//         if (sum === 0) {
+//           let temp = [arr[i], arr[j++], arr[k--]];
+//           ans.push(temp);
+//           while (i < k && arr[j] === arr[j - 1]) j++;
+//           while (i < k && arr[k] === arr[k + 1]) k--;
+//         } else if (sum < 0) j++;
+//         else k--;
+//       }
+//     }
+//   }
+//   return ans;
+// }
+// let threeSumRes = threeSum(arr);
+// console.log(threeSumRes);
+
+// ? Merge sort -> Divide and Conqure:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
