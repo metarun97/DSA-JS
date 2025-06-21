@@ -2789,26 +2789,35 @@
 // let threeSumRes = threeSum(arr);
 // console.log(threeSumRes);
 
-// ? Merge sort -> Divide and Conqure:-
+// ? => Divide and Conqure:-
 
+function conqureFunc(arr, first, middle, last) {
+  let temp = new Array(last - first + 1).fill(0);
+  let i = first,
+    j = middle + 1,
+    k = 0;
+  while (i <= middle && j <= last) {
+    if (arr[i] < arr[j]) temp[k++] = arr[i++];
+    else arr[k++] = arr[j++];
+  }
+  while (i <= middle) {
+    arr[k++] = arr[i++];
+  }
+  while (j <= last) {
+    arr[k++] = arr[j++];
+  }
+  while (k < temp.length) {
+    arr[i++] = temp[k++];
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function devideFunc(arr, first, last) {
+  if (first >= last) return;
+  let middleElem = Math.floor(first + last) / 2;
+  devideFunc(arr, first, middleElem);
+  devideFunc(arr, middleElem + 1, last);
+  conqureFunc(arr, first, middleElem, last);
+}
+let arr = [10, 12, 13, 5, 18, 16, 8, 1];
+devideFunc(arr, 0, arr.length - 1);
+console.log(arr);
